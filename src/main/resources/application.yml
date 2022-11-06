@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: sse
+  router:
+    static-resources:
+      default:
+        enabled: true
+        paths: classpath:public
+        mapping: /**
+netty:
+  default:
+    allocator:
+      max-order: 3
